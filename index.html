@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment-6</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body>
+   <!-- header section -->
+   <section>
+    <nav class="flex justify-center bg-white py-5">
+      <div
+        class="grid lg:grid-cols-3 md:grid-cols-3 lg:gap-x-64 items-center grid-cols-1"
+      >
+        <img src="./icon/Logo.png" />
+        <button
+          id="shorting_section"
+          onclick="viewNumber()"
+          class="btn btn-neutral bg-[#25252533] hover:bg-[#FF1F3D] hover:text-[#fff] text-[#252525] mt-2 mb-3 w-[80%]"
+        >
+          Sort by view
+        </button>
+        <a href="./blog.html"
+          ><button
+            class="btn btn-neutral bg-[#25252533] hover:bg-[#FF1F3D] hover:text-[#fff] text-[#252525] w-[75%]"
+          >
+            Blog
+          </button></a
+        >
+      </div>
+    </nav>
+  </section>
+  <div class="h-[2px] bg-red-500"></div>
+  <!-- category button section -->
+
+  <div class="mx-auto w-full container flex justify-center bg-white">
+    <div class="w-[50%] flex justify-center mt-4">
+      <div
+        id="categoryButtonCointainer"
+        class="lg:grid-cols-4 md:grid-cols-3 grid grid-cols-1"
+      ></div>
+    </div>
+  </div>
+
+  <!-- Body Section -->
+  <section>
+    <div
+      id="mainBody"
+      class="bg-white grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 px-4 py-4 gap-4 lg:px-24"
+    ></div>
+    <!-- no content  -->
+
+    <div id="no-content"  class="h-full py-[50px] hidden bg-white"></div>
+
+  </section>
+  </body>
+  <script src="./js/index.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</html>
